@@ -1,0 +1,143 @@
+Footer.css
+
+.main-footer {
+    padding: 20px;
+    background-color: #333; /* Adjust the background color as needed */
+}
+
+/* Common styles for mobile and larger screens */
+.footertop, .footermiddle, .footerend {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    color: white; /* Adjust the text color as needed */
+}
+
+.cities, .companydata {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.cities a, .companydata a {
+    margin: 0 10px;
+    color: white; /* Adjust the link color as needed */
+    text-decoration: none;
+}
+
+/* Responsive styles for larger screens */
+@media (min-width: 768px) {
+    .footertop, .footermiddle, .footerend {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .cities, .companydata {
+        flex-direction: row;
+    }
+
+    .companystart, .Our, .Follow {
+        flex: 1;
+        margin: 10px; /* Adjust the margin as needed */
+    }
+
+    .copyright, .footer-links {
+        flex: 1;
+    }
+}
+
+/* CSS2 */
+* {
+    color: white;
+    font-family: "Roboto", sans-serif;
+}
+
+.main-footer {
+    background-image: linear-gradient(rgba(4, 9, 30, 0.8), rgba(4, 9, 30, 0.8)), url("vegies.jpg");
+    background-position: cover;
+    color: white;
+    padding-top: 3rem;
+    bottom: 0;
+}
+
+.container {
+    margin: auto;
+    text-align: center;
+    padding-top: 70px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+p {
+    color: white;
+}
+
+.row {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+    color: white;
+    margin-bottom: 0.2rem;
+}
+
+.col {
+    flex-basis: 31%;
+    margin-top: 2rem;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    justify-content: flex-start;
+}
+
+h1 {
+    text-align: center;
+    font-weight: 600;
+    margin: 10px 0;
+    font-size: 35px;
+    content: "";
+    display: block;
+    color: rgb(255, 255, 255);
+}
+
+.link {
+    color: white;
+}
+
+.col h1:hover {
+    cursor: pointer;
+    transition: transform 0.5s;
+    transform: translateY(-10px) scale(1.05);
+    width: 100%;
+}
+
+p {
+    padding: 2px;
+    font-weight: 100;
+    opacity: 0.6;
+    font-size: 18px;
+}
+
+.col p:hover {
+    cursor: pointer;
+    opacity: 1;
+    font-weight: 500;
+}
+
+.col-sm {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-below {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+    margin: 1rem;
+    margin-top: 0;
+}
+
