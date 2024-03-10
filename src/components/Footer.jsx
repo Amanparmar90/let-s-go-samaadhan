@@ -7,21 +7,19 @@ const Footer = () => {
     return (
         <>
             <div className='main-footer'>
-
-                <div className='footertop'>
-                    <div className="citiesheadline"><h3>We are available in the cities &gt;</h3></div>
-                    <div className="cities">
-                        {FooterData.cities.map((city, index) => (
-                            <span key={index}>
-                                <a href={city.link}>{city.name}</a>
-                                {index !== FooterData.cities.length - 1 && ', '}
-                            </span>
-                        ))}
-                    </div>
-                </div>
-
-
                 <div className='footermiddle'>
+                    <div className="Description1">
+                        <div className="Description"><h2>Samaadhaan</h2><p>The complete Kitchen Solution</p></div>
+                        <div className="FooterData.Description">
+                            {FooterData.Description.map((Description, index) => (
+                                <span key={index}>
+                                    <span>{Description.name}</span>
+                                    {index !== FooterData.Description.length - 1 && ', '}
+                                </span>
+                            ))}
+                        </div>
+                    </div>
+
                     <div className="Company1">
                         <div className="Company"><h2>Company</h2></div>
                         <div className="FooterData.companyLinks">
@@ -29,42 +27,6 @@ const Footer = () => {
                                 <span key={index}>
                                     <a href={city.link}>{city.name}</a>
                                     {index !== FooterData.companyLinks.length - 1 && ', '}
-                                </span>
-                            ))}
-                        </div>
-                    </div>
-
-                    <div className="Jobs and Career1">
-                        <div className="Jobs and Career"><h2>Jobs and Career</h2></div>
-                        <div className="FooterData.jobsAndCareerLinks">
-                            {FooterData.jobsAndCareerLinks.map((city, index) => (
-                                <span key={index}>
-                                    <a href={city.link}>{city.name}</a>
-                                    {index !== FooterData.jobsAndCareerLinks.length - 1 && ', '}
-                                </span>
-                            ))}
-                        </div>
-                    </div>
-
-                    <div className="Help and Support1">
-                        <div className="Help and Support"><h2>Help and Support</h2></div>
-                        <div className="FooterData.helpAndSupportLinks">
-                            {FooterData.helpAndSupportLinks.map((city, index) => (
-                                <span key={index}>
-                                    <a href={city.link}>{city.name}</a>
-                                    {index !== FooterData.helpAndSupportLinks.length - 1 && ', '}
-                                </span>
-                            ))}
-                        </div>
-                    </div>
-
-                    <div className="Company Culture1">
-                        <div className="Company Culture"><h2>Company</h2></div>
-                        <div className="FooterData.companyCultureLinks">
-                            {FooterData.companyCultureLinks.map((city, index) => (
-                                <span key={index}>
-                                    <a href={city.link}>{city.name}</a>
-                                    {index !== FooterData.companyCultureLinks.length - 1 && ', '}
                                 </span>
                             ))}
                         </div>
@@ -82,18 +44,16 @@ const Footer = () => {
                         </div>
                     </div>
 
-                    <div className="Follow Us1">
-                        <div className="Follow Us"> <h2>Follow Us</h2></div>
-                        <div className="FooterData.followUsLinks">
-                            {FooterData.followUsLinks.map((city, index) => (
+                    <div className="Contact1">
+                        <div className="FooterData.Contact">
+                            {FooterData.Contact.map((Contact, index) => (
                                 <span key={index}>
-                                    <a href={city.link}>{city.name}</a>
-                                    {index !== FooterData.followUsLinks.length - 1 && ', '}
+                                    <a href={Contact.link}>{Contact.name}</a>
+                                    {index !== FooterData.ourAppLinks.length - 1 && ', '}
                                 </span>
                             ))}
                         </div>
                     </div>
-
                 </div>
 
                 <div className='footerend'>
@@ -109,9 +69,6 @@ const Footer = () => {
                         </div>
                     </div>
                 </div>
-
-
-
             </div>
 
         </>
