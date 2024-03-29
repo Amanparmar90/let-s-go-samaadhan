@@ -1,8 +1,9 @@
 // Courselisteningdata.js
-
+import paidvideothumbnail from '../../assets/paidvideothumnail.svg'
 const Coursedata = [
     {
        id: 0,
+       thumbnail:paidvideothumbnail,
      title: "Veg Cheez Manchurian | Vegetarian",
      instructors: ["Aman Parmar", "Ranveer Bara", "Kunal Kapoor"],
      details: [
@@ -17,6 +18,7 @@ const Coursedata = [
    },
    {
        id: 1,
+       thumbnail:paidvideothumbnail,
      title: "Veg Cheez Manchurian | Vegetarian",
      instructors: ["Nilesh Kumar", "Ranveer Bara", "Kunal Kapoor"],
      details: [
@@ -31,6 +33,7 @@ const Coursedata = [
    },
     {
        id: 2,
+       thumbnail:paidvideothumbnail,
      title: "Veg Cheez Manchurian | Vegetarian",
      instructors: ["Ojash", "Ranveer Bara", "Kunal Kapoor"],
      details: [
@@ -45,6 +48,7 @@ const Coursedata = [
    },
     {
        id: 3,
+       thumbnail:paidvideothumbnail,
      title: "Veg Cheez Manchurian | Vegetarian",
      instructors: ["TeJ Panchal", "Ranveer Bara", "Kunal Kapoor"],
      details: [
@@ -59,6 +63,7 @@ const Coursedata = [
    },
    {
     id: 4,
+    thumbnail:paidvideothumbnail,
   title: "Veg Cheez Manchurian | Vegetarian",
   instructors: ["Kishore Solanki", "Ranveer Bara", "Kunal Kapoor"],
   details: [
@@ -73,6 +78,7 @@ const Coursedata = [
 },
 {
   id: 5,
+  thumbnail:paidvideothumbnail,
 title: "Veg Cheez Manchurian | Vegetarian",
 instructors: ["Devika Verma", "Ranveer Bara", "Kunal Kapoor"],
 details: [

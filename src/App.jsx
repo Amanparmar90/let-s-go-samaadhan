@@ -4,14 +4,20 @@ import Footer from './components/Footer';
 import CourseListening from './components/Course/CourseListening';
 import Add from './components/Add/Adds';
 import Poster from './components/Poster/Poster';
+import Localcourses from './components/LocalAreacourses/Localcourses';
+import Service from './components/Service provide/Service';
+import Freevideos from './components/freerecordedvideos/Freevideos';
 
 function App() {
   return (
     <>
-      <Add />
+       <Add />
       <br />
-      <Poster />
-      <CourseListening />
+      <Service />
+      <Freevideos />
+      <Poster /> 
+       <Localcourses />
+     <CourseListening /> 
       <Footer />
     </>
   );

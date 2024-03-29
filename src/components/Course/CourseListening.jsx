@@ -8,7 +8,7 @@ const CourseListening = () => {
       <div className='footertop'>
         {Coursedata.map(course => (
           <div key={course.id} className="course-card">
-            {/* <img src={course.image} alt={course.title} /> */}
+           <img src={course.thumbnail} alt={course.title} />
             <div className="course-desc">
               <h3>{course.title}</h3>
               <p>Instructors: {course.instructors.join(", ")}</p>
