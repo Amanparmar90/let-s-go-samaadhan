@@ -1,0 +1,121 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: transparent;
+    color: #fff;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+  
+  *{
+    background-color: black;
+  }
+  .navbar-brand {
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: #fff;
+    font-family: 'Luckiest Guy', cursive;
+  }
+  
+  .navbar-nav {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .nav-item {
+    margin-right: 1.5rem;
+  }
+  
+  .nav-link {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.2rem;
+    margin-top: 20px;
+  }
+  
+  .nav-button {
+    background-color: transparent;
+    color: #FFA900;
+    border: 3px solid #FFA900;
+    padding: 0.5rem 1rem;
+    border-radius: 0.6rem;
+    cursor: pointer;
+    font-size: 1.2rem;
+    margin-top: -5px;
+  }
+  
+  .menu {
+    display: none;
+    position: absolute;
+    top: 0.75rem;
+    right: 0.5rem;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 2.25rem;
+    height: 2rem;
+    background-color: rgba(0, 0, 0, 0.34);
+  }
+  
+  .menu span {
+    height: 0.3rem;
+    width: 100%;
+    background-color: white;
+    border-radius: 0.2rem;
+  }
+  @media (max-width: 632px) {
+    .menu {
+      display: flex;
+    }
+    
+    .navbar {
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+  
+    .navbar-nav {
+      display: none;
+      flex-direction: column;
+      width: 100%;
+      margin-bottom: 0.25rem;
+    }
+  
+    .navbar-nav.Open {
+      display: flex;
+    }
+  }
+  
+  .search-container {
+    display: flex;
+    align-items: center;
+  }
+  
+  .search-input {
+    padding: 0.5rem;
+    background-color: rgba(0, 0, 0, 0.34);
+    border-radius: 4px 0 0 4px;
+    width: 200px; /* Adjust width as needed */
+    border: none;
+    color: #fff;
+  }
+  
+  .search-button {
+
+  }
+  
+  .search-button i {
+    font-size: 1rem;
+  }
+  
+  /* Media query for responsiveness */
+  @media (max-width: 632px) {
+    .search-input {
+      width: 100%; /* Make input full width on smaller screens */
+    }
+  }
+  

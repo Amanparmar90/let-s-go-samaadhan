@@ -1,25 +1,15 @@
-import React from 'react';
+import Navbar from './Components/Navbar';
 import './App.css';
-import Footer from './components/Footer';
-import CourseListening from './components/Course/CourseListening';
-import Add from './components/Add/Adds';
-import Poster from './components/Poster/Poster';
-import Localcourses from './components/LocalAreacourses/Localcourses';
-import Service from './components/Service provide/Service';
-import Freevideos from './components/freerecordedvideos/Freevideos';
-
+import { Routes,Route } from 'react-router';
+import Aboutus from './pages/Aboutus'
 function App() {
   return (
-    <>
-       <Add />
-      <br />
-      <Service />
-      <Freevideos />
-      <Poster /> 
-       <Localcourses />
-     <CourseListening /> 
-      <Footer />
-    </>
+    <div className="App">
+      <Navbar/>
+      <Routes>
+    <Route path="/about" element={<Aboutus/>} />
+      </Routes>
+    </div>
   );
 }
 
