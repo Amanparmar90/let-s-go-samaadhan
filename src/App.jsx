@@ -7,10 +7,12 @@ import Poster from './components/Poster/Poster';
 import Localcourses from './components/LocalAreacourses/Localcourses';
 import Service from './components/Service provide/Service';
 import Freevideos from './components/freerecordedvideos/Freevideos';
+import Home from './components/home/Home';
 
 function App() {
   return (
     <>
+    <Home />
        <Add />
       <br />
       <Service />

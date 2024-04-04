@@ -1,0 +1,143 @@
+.videos{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    overflow-x: scroll;
+    margin: 3%;
+}
+#vidimg{
+  height: 30vh;
+  width: 30vw;
+  margin-left: -3vw;
+}
+#recipename{
+    margin-top: -0.5vh;
+    margin-bottom: -1vh;
+    font-size: 1.9rem;
+    font-weight: bold;
+
+}
+
+#nameofchef{
+    margin-top: -1vh;
+    margin-bottom: -1vh;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+#like{
+    margin-top: -1vh;
+    margin-bottom: -0.5vh;
+    font-size: 1.5rem;
+    font-weight: bold;
+
+}
+.coursebutton{
+   
+        height: 5vh;
+        width: 25vw;
+        background: linear-gradient(180deg, #FFAE00 0%, #FF852D 100%);
+        border-radius: 13px;
+        border: none;
+        font-size: 1.3rem;
+        color: white;
+        font-weight: bold;
+    
+    
+}
+.slider .slick-current {
+    position: relative !important;
+    z-index: 50 !important;
+  }
+  .local-courses {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .filter_state {
+    margin-bottom: 20px;
+  }
+  
+  
+  
+  .slick-prev {
+    left: 10px;
+  }
+  
+  .slick-next {
+    right: 10px;
+  }
+  
+  .custom-arrow {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .custom-arrow img {
+    width: 50px;
+  }
+
+  .local-courses {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .filter_state {
+    margin-bottom: 20px;
+  }
+  
+  .slick-prev, .slick-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .slick-prev {
+    left: 10px;
+  }
+  
+  .slick-next {
+    right: 10px;
+  }
+  
+  .custom-arrow img {
+    width: 50px; /* Adjust the width of the arrow image */
+  }
+  
+.local-courses {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.filter_state {
+  margin-bottom: 20px;
+}
+
+.slick-prev, .slick-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.slick-prev {
+  left: 10px;
+}
+
+.slick-next {
+  right: 10px;
+}
+
+.custom-arrow img {
+  width: 50px; /* Adjust the width of the arrow image */
+}

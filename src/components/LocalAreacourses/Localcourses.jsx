@@ -13,21 +13,26 @@ const Localcourses = () => {
 
   return (
     <div> 
-       <div>Lets cook something from your local</div>
+       <div><h2>Lets cook something from your local</h2></div> <br/>
        <div>
           <select className='filter_state' value={state} onChange={handleStateChange}>
             <option value="Rajasthan">Rajasthan</option>
             <option value="Gujarat">Gujarat</option>
+            <option value="Punjab">Punjab</option>
           </select>
         </div>
+        <br/>
         <div className='videos' >
         {coursedata[state].map((value, index) => (
+          <a href="http://">
           <div key={index}>
             <img src={value.videourl} alt="" srcset="" />
-            <p>{value.nameofchef}</p>
-            <p>{value.recipename}</p>
-            <p>{value.like}</p>
+            <h2></h2>
+            <p>{value.recipename}<br/>
+              {value.nameofchef}<br/>  
+            {value.like}</p>
           </div>
+          </a>
         ))}
       </div>
     </div>
