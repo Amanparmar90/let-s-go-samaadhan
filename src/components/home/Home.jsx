@@ -5,6 +5,7 @@ import home1 from '../../assets/home1.jpg';
 import home2 from '../../assets/home2.jpg';
 import home3 from '../../assets/home3.jpg';
 import { burger } from '../../assets/homdata.js';
+import { linkshare } from '../../assets/homdata.js';
 
 const Home = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -43,7 +44,7 @@ const Home = () => {
       ))}
       <div>
         <button>PlayNow</button>
-        <a href="http://">Share <img src="#" alt="arrow" srcset="" /></a>
+        <a href="http://">Share <img src={ linkshare } alt="arrow" srcset="" /></a>
         </div>
         <div>
       <img src={ burger } alt="" />

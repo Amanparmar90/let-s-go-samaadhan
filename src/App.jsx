@@ -8,6 +8,7 @@ import Localcourses from './components/LocalAreacourses/Localcourses';
 import Service from './components/Service provide/Service';
 import Freevideos from './components/freerecordedvideos/Freevideos';
 import Home from './components/home/Home';
+import Select_food_according_to_yourtaste from './components/fooditemsdescribe/Select_food_according_to_yourtaste';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
        <Add />
       <br />
       <Service />
+      <Select_food_according_to_yourtaste />
       <Freevideos />
       <Poster /> 
        <Localcourses />
